@@ -1,0 +1,34 @@
+<html>
+<head>
+  <title>Notes</title>
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      text-align: center;
+      background: #f9f9f9;
+    }
+    img {
+      width: 100%;
+      max-width: 800px;
+      margin: 20px auto;
+      display: block;
+    }
+  </style>
+</head>
+<body>
+
+<script>
+  const startPage = 36;
+  const endPage = 43;
+
+  for (let i = startPage; i <= endPage; i++) {
+    const img = document.createElement("img");
+    img.src = i + ".jpg";
+    img.alt = "Page " + i;
+    document.body.appendChild(img);
+  }
+</script>
+
+</body>
+</html>
